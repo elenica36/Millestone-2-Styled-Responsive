@@ -1,0 +1,88 @@
+/* DEV.140 · Week 4 · Lecture 7 · START. Follow along, one rule at a time. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #f5f7fb;
+  color: #16233f;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #0e9c93;
+  margin: 0;
+}
+
+main {
+  padding: 0 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.note {
+  color: #c8102e;
+}
+
+#hero {
+  background-color: #e6f4f3;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+header {
+  padding: 24px;
+  border-bottom: 4px solid #0e9c93;
+  margin-bottom: 32px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #16233f;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+footer {
+  padding: 16px 24px;
+  border-top: 1px solid #16233f;
+  margin-top: 32px;
+}
+
+/* TODO slide 7: turn the menu into a menu bar
+   display: flex;  gap: 24px;  list-style: none;  padding: 0 24px; */
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0 24px;
+}
+
+/* TODO slide 13: a grid of project cards
+   display: grid;  grid-template-columns: repeat(3, 1fr);  gap: 24px; */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Already done for you: once .projects is a grid, this keeps the
+   "Projects" heading on its own row, above the cards. */
+.projects h2 {
+  grid-column: 1 / -1;
+}
+
+/* Already done for you: inside the grid, gap does the spacing,
+   so the cards don't need their own bottom margin. */
+.projects .card {
+  margin-bottom: 0;
+}
